@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Expletus+Sans:ital@1&family=Graduate&family=Handlee&family=Oleo+Script:wght@400;700&family=Orbitron&family=Poppins:wght@500&family=Roboto+Mono&family=Spline+Sans+Mono&family=Tapestry&family=Updock&family=Water+Brush&display=swap");
+
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+}
+
+nav {
+  display: flex;
+  height: 10vh;
+  width: 100vw;
+  background-color: black;
+  align-items: center;
+}
+
+nav a {
+  width: 100vw;
+  color: white;
+  text-decoration: none;
+  font-size: 2.5vh;
+}
+
+nav img {
+  width: 10vw;
+  margin-right: 20vw;
+  margin-left: 2vw;
+}
+
+video {
+  position: absolute;
+  height: calc(100vh);
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.section1 {
+  height: 104.5vh;
+}
+
+.section1 h1 {
+  width: 40vw;
+  font-size: 10vh;
+  margin-left: 15vw;
+  margin-top: 10vh;
+  margin-bottom: 2vh;
+}
+
+.section1Buttons {
+  margin-left: 15vw;
+}
+
+.startBuildingButton {
+  font-size: 2vh;
+  border-radius: 2vw;
+  padding: 2vh;
+  border: none;
+  background-color: rgb(20, 241, 149);
+}
+
+.readDocumentationButton {
+  border-radius: 2vw;
+  padding: 2vh;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  font-size: 2vh;
+}
+
+.solanaText {
+  margin-left: 15vw;
+  width: 40vw;
+  margin-top: 2vw;
+  font-size: 2vh;
+}
+
+.containerGreen {
+  font-size: 2vh;
+  background-color: rgb(20, 241, 149);
+  display: flex;
+  height: 10vh;
+  font-family: Poppins;
+  color: black;
+  width: 100vw;
+}
+.elements {
+  display: flex;
+  width: 100vw;
+  border: 1px solid black;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.elementText {
+  width: 10vh;
+}
+
+.double {
+  display: flex;
+  background-color: black;
+  padding-bottom: 40vh;
+}
+
+.first,
+.second {
+  font-family: Poppins;
+  margin-top: 15vh;
+  width: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.first h1 {
+  font-size: 6vh;
+  margin-left: 15vw;
+  margin-right: 1em;
+}
+
+.second {
+  display: block;
+  font-size: 2vh;
+  margin-right: 8vh;
+  margin-left: 2vh;
+  padding: 4vh;
+}
+
+.buttonPurple {
+  font-size: 2vh;
+  margin-top: 5vh;
+  background-color: rgb(153, 69, 255);
+  border-radius: 1.5vw;
+  padding: 0.8vw;
+  color: white;
+  border: 1px solid black;
+}
+
+.scale {
+  color: white;
+  background-color: black;
+  font-family: Poppins;
+}
+
+.scale h1 {
+  margin: 0;
+  font-size: 5vh;
+  margin-left: 25.2vw;
+}
+.scale h3 {
+  margin: 0;
+  font-size: 2vh;
+  margin-left: 25.2vw;
+}
+.scale img {
+  width: 100%;
+}
+
+.scaleImage {
+  opacity: 0;
+  transition: opacity 3s;
+}
+.scaleImage.active {
+  opacity: 1;
+  transition: opacity 3s;
+}
+
+.scaleText {
+  margin-top: 1vh;
+  width: 40vw;
+  font-size: 1.5vh;
+  margin-left: 25.2vw;
+}
+
+.cards {
+  color: white;
+  background-color: black;
+  font-family: Poppins;
+  margin-top: 30vh;
+  display: flex;
+  justify-content: center;
+}
+
+.cards h1 {
+  margin: 0;
+}
+
+.cardOne,
+.cardTwo {
+  width: 30vw;
+  height: 70vh;
+  margin: 1vw;
+  background-color: rgb(41, 41, 41);
+  border-radius: 3vh;
+  opacity: 0;
+  transition: all 3s;
+  margin-bottom: 10vh;
+}
+
+.cardOne {
+  transform: translateX(-30vh);
+}
+.cardTwo {
+  transform: translateX(30vh);
+}
+.cardText {
+  height: 30%;
+}
+
+.cardOne.activeRight,
+.cardTwo.activeLeft {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 2.5s;
+}
+
+.cardOne h1,
+.cardTwo h1 {
+  margin-left: 1vw;
+  font-size: 5vh;
+}
+
+.cardOne p,
+.cardTwo p {
+  margin-left: 1vw;
+}
+
+.cardOne img,
+.cardTwo img {
+  border-radius: 3vh;
+  width: 100%;
+  height: 70%;
+}
+
+.decentralized {
+  margin-bottom: 35vh;
+}
+.decentralized img {
+  width: 100%;
+
+  background-color: black;
+}
+
+.decentralized h1 {
+  font-size: 7vh;
+}
+.decentralized h3 {
+  font-size: 2em;
+}
+.decentralizedText {
+  font-family: Poppins;
+  width: 50vw;
+  margin-left: 25.2vw;
+}
+
+.decentralizedText h1,
+.decentralizedText h3 {
+  margin: 0;
+}
+
+.grid {
+  width: 70vw;
+  margin: 0 auto;
+  color: black;
+  font-family: Poppins;
+}
+
+.twoGrids {
+  display: flex;
+  justify-content: center;
+}
+.firstGrid,
+.secondGrid {
+  width: 50vw;
+  border-radius: 2vw;
+  height: 35vh;
+  font-size: 2vh;
+  margin: 1vw;
+}
+
+.firstGrid {
+  background-color: rgb(235, 84, 188);
+}
+.secondGrid {
+  background-color: rgb(20, 241, 149);
+}
+
+.gridText {
+  margin-left: 2vw;
+}
+
+.gridButton {
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  padding: 1.5vh;
+  border-radius: 2vh;
+  cursor: pointer;
+}
+
+.botGrid {
+  background-color: rgb(128, 236, 255);
+  border-radius: 3vh;
+  box-shadow: 0 40px 80px 0 rgba(128, 236, 255, 0.8);
+  margin: 1vw;
+}
+.botContainer {
+  display: flex;
+  margin-bottom: 30vh;
+}
+
+.container1,
+.container2 {
+  width: 50vw;
+  margin: 2vh;
+}
+
+.container2 p {
+  font-size: 2vh;
+}
+.botText {
+  width: 20vw;
+  font-size: 5vh;
+}
