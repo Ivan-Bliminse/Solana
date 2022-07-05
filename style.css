@@ -76,6 +76,8 @@ video {
   font-size: 2vh;
 }
 
+/* ======================= Container Green =============================*/
+
 .containerGreen {
   font-size: 2vh;
   background-color: rgb(20, 241, 149);
@@ -96,6 +98,8 @@ video {
 .elementText {
   width: 10vh;
 }
+
+/* ======================= Double Block ======================= */
 
 .double {
   display: flex;
@@ -138,6 +142,8 @@ video {
   border: 1px solid black;
 }
 
+/* =============== Scale Block ==================== */
+
 .scale {
   color: white;
   background-color: black;
@@ -173,6 +179,8 @@ video {
   font-size: 1.5vh;
   margin-left: 25.2vw;
 }
+
+/* ===================== Cards Block ===================== */
 
 .cards {
   color: white;
@@ -233,6 +241,8 @@ video {
   width: 100%;
   height: 70%;
 }
+
+/* ============= Decentralized Block =================== */
 
 .decentralized {
   margin-bottom: 35vh;
