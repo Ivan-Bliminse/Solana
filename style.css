@@ -260,67 +260,69 @@ video {
   margin: 0;
 }
 
-.grid {
-  width: 70vw;
-  margin: 0 auto;
+/* ================== Grid  =======================*/
+.gridContainer {
   color: black;
-  font-family: Poppins;
+  display: grid;
+  width: 70vw;
+  height: auto;
+  margin: auto;
+  grid-template-areas:
+    "pinkGrid greenGrid"
+    "cyanGrid cyanGrid";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 2vh;
+  column-gap: 2vw;
 }
 
-.twoGrids {
-  display: flex;
-  justify-content: center;
-}
-.firstGrid,
-.secondGrid {
-  width: 50vw;
-  border-radius: 2vw;
-  height: 35vh;
+.pinkGrid {
   font-size: 2vh;
-  margin: 1vw;
-}
-
-.firstGrid {
+  grid-area: pinkGrid;
   background-color: rgb(235, 84, 188);
+  padding: 2vh;
+  border-radius: 2vh;
 }
-.secondGrid {
+
+.greenGrid {
+  font-size: 2vh;
+  grid-area: greenGrid;
   background-color: rgb(20, 241, 149);
+  padding: 2vh;
+  border-radius: 2vh;
+}
+.cyanGrid {
+  font-size: 2vh;
+  grid-area: cyanGrid;
+  background-color: rgb(128, 236, 255);
+  box-shadow: 0 40px 80px 0 rgba(128, 236, 255, 0.8);
+  padding: 2vh;
+  display: flex;
+  border-radius: 2vh;
 }
 
-.gridText {
-  margin-left: 2vw;
+.cyanGrid h1 {
+  margin-left: 5vw;
+  margin-right: 15vw;
+  width: 35vw;
+  font-size: 5vh;
 }
 
-.gridButton {
+.cyanGrid .cyanGridText {
+  width: 65vw;
+  font-size: 2vh;
+  margin-right: 5vh;
+}
+
+.cyanGrid {
+  margin-bottom: 20vh;
+}
+.gridContainer button {
+  font-size: 1.5vh;
   border: 1px solid white;
   background-color: black;
   color: white;
   padding: 1.5vh;
   border-radius: 2vh;
   cursor: pointer;
-}
-
-.botGrid {
-  background-color: rgb(128, 236, 255);
-  border-radius: 3vh;
-  box-shadow: 0 40px 80px 0 rgba(128, 236, 255, 0.8);
-  margin: 1vw;
-}
-.botContainer {
-  display: flex;
-  margin-bottom: 30vh;
-}
-
-.container1,
-.container2 {
-  width: 50vw;
-  margin: 2vh;
-}
-
-.container2 p {
-  font-size: 2vh;
-}
-.botText {
-  width: 20vw;
-  font-size: 5vh;
 }
